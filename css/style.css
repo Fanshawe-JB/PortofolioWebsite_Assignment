@@ -1,0 +1,152 @@
+html,
+body {
+    scroll-behavior: smooth;
+    overscroll-behavior: auto;
+}
+
+html {
+    height: 100%;
+    margin: auto;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow: hidden;
+    z-index: 900;
+    position:relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    background: #111214;
+    padding: 5px 40px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 15px 0;
+    cursor: pointer;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+
+nav ul li .items {
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+    order: 3;
+}
+
+nav ul li.items::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background: #33ffff;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+nav ul li .items:hover:after {
+    opacity: 1;
+    bottom: 8px;
+}
+
+nav ul li.logo {
+    flex: 1;
+    cursor: default;
+    user-select: none;
+}
+
+nav ul li a {
+    color: #ffff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+nav ul li:hover a {
+    color: #FF0000;
+}
+
+nav ul li i {
+    font-size: 23px;
+}
+
+nav ul li.btn {
+    display: none;
+}
+
+/* nav ul li.btn.hide i::before {
+    content: '\f00d';
+} */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  .some-page-wrapper {
+    margin: 15px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+  .blue-column {
+    height: 100px;
+  }
+  
+  .green-column {
+    height: 100px;
+  }
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;   /* Height of the footer */
+    background: #6cf;
+    margin-top: 200px;
+ }
