@@ -1,0 +1,21 @@
+.introduction-self {
+    color: white;
+    margin-top: 127px;
+    text-align: center;
+    font-size: 40px;
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+.intro-paragraph {
+    color: white;
+    margin-top: 127px;
+    text-align: center;
+    font-size: 20px;
+    font-family: open-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+}

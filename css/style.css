@@ -1,13 +1,6 @@
 html,
 body {
     scroll-behavior: smooth;
-    overscroll-behavior: auto;
-}
-
-html {
-    height: 100%;
-    margin: auto;
-    width: 100%;
 }
 
 body {
@@ -143,10 +136,9 @@ nav ul li.btn {
   }
 
 #footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 60px;   /* Height of the footer */
-    background: #6cf;
-    margin-top: 200px;
- }
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+
+}
