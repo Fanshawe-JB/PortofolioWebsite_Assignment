@@ -1,0 +1,99 @@
+.project-gallery {
+    background: #fff;
+    width: 100%;
+    height: 104vh;
+    margin-top: 127px;
+    margin-bottom: 55px;
+}
+
+.proj-title {
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    margin-bottom: 27px;
+    /*    color: #363638;*/
+    color: #D80621;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 40px;
+    z-index: 1;
+    margin-top: -700px;
+    margin-left: 66px;
+}
+
+.proj-background-image {
+    width: 100vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 127px;
+    margin-bottom: 500px;
+}
+
+.gallery-image .images {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+    margin-bottom: 20px;
+}
+
+.img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+    /*    border: solid #D80621 3px;*/
+    border-radius: 5px;
+    margin-top: 75px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.img-box:hover .images { 
+    transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+
+.img-box:hover {
+    cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.opacity-low {
+    opacity: 0.5;
+}

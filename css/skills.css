@@ -1,0 +1,119 @@
+.skills-title {
+    color: #D80621;
+    font-size: 100px;
+    margin-top: 127px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.skills-text {
+    color: #E7E7E7;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 22px;
+    font-family: open-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /*    text-transform: capitalize;*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.skills-filter-body {
+    padding: 15px;
+}
+
+.container h4{
+    text-align: center;
+    font-size: 11px;
+    margin: 10px 0;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: open-sans, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.container ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    margin-top: 20px;
+}
+
+.container ul .category{
+    list-style: none;
+    padding: 8px 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    background: #F5F5F5;
+    color: #D80621;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: open-sans, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 3px;
+}
+
+.container ul .category.active{
+    background: #D80621;
+    color: #fff;
+
+}
+
+.container .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.container .gallery .image{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 5px;
+    border: 5px solid #E7E7E7;
+    background: #E7E7E7;
+    margin-left: 27px;
+    margin-right: 27px;
+    margin-bottom: 22px;
+    border-radius: 27px;
+}
+
+/*
+.container .gallery .image:hover img{
+transform: scale(1.2);
+}
+*/
+
+.container .gallery .image img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    transition: 0.4s;
+    margin-top: 13px;
+    padding: 5px;
+}
